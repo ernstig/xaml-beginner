@@ -10,20 +10,14 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
-
             <RowDefinition Height="9*"/>
             <RowDefinition Height="1*"/>
-            
         </Grid.RowDefinitions>
-        
-        <TextBlock x:Name="textBlock" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center"
-                   FontSize="38"
-                   Grid.Row="1" 
-                   TextWrapping="Wrap" Text="**Clear All Orders**" 
-                   
-/>
 
+        <Button x:Name="textBlock" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="38" Grid.Row="1" Content="Clear All Orders" />
+        <GridView x:Name="gridView" HorizontalAlignment="Center" VerticalAlignment="Center" Width="670" Height="486" Background="#FF1F67D0" />
+        <AppBar>
+                <AppBarButton x:Name="appBarButton" HorizontalAlignment="Left" Icon="Home" Label="Home" VerticalAlignment="Top" Click="appBarButton_Click"/>
+        </AppBar>
     </Grid>
 </Page>

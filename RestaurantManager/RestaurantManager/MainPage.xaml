@@ -20,17 +20,9 @@
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="**Go to Orders View**" FontSize="48" VerticalAlignment="Center"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="**Submit Order**" FontSize="48" VerticalAlignment="Center"/>
-        <TextBlock x:Name="textBlock2" 
-                   HorizontalAlignment="Center" 
-                   TextAlignment="Center"
-                   TextWrapping="NoWrap" 
-                   Text="Restaurant Manager" 
-                   VerticalAlignment="Bottom"
-                   FontSize="52" Width="593"
-                   Grid.ColumnSpan="2" 
-                   />
+        <Button x:Name="GoToOrders" HorizontalAlignment="Center"  Grid.Row="2"  Content="Go to Orders View" FontSize="48" VerticalAlignment="Center" Click="btnGoToOrders_Click"/>
+        <Button x:Name="SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2"  Content="Submit Order" FontSize="48" VerticalAlignment="Center" Click="btnSubmitOrder_Click"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap" Text="Restaurant Manager" VerticalAlignment="Bottom" FontSize="52" Width="593" Grid.ColumnSpan="2" />
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="NoWrap" Text="Internal Test Version" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
 
     </Grid>
