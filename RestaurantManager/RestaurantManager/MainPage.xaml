@@ -8,37 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*" />
             <ColumnDefinition Width="0.5*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-
             <RowDefinition Height="0.4*"/>
             <RowDefinition Height="0.1*" />
             <RowDefinition Height="0.5*"/>
-
-
         </Grid.RowDefinitions>
-        
+
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="**Go to Orders View**" FontSize="48" VerticalAlignment="Center"/>
         <TextBlock x:Name="textBlock1" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="**Submit Order**" FontSize="48" VerticalAlignment="Center"/>
         <TextBlock x:Name="textBlock2" 
-                   HorizontalAlignment="Right" 
-                   TextAlignment="Right"
-                   TextWrapping="Wrap" 
-                   Text="Restaurant" 
+                   HorizontalAlignment="Center" 
+                   TextAlignment="Center"
+                   TextWrapping="NoWrap" 
+                   Text="Restaurant Manager" 
                    VerticalAlignment="Bottom"
-                   FontSize="32" Width="197"
+                   FontSize="52" Width="593"
+                   Grid.ColumnSpan="2" 
                    />
-        <TextBlock x:Name="textBlock3" 
-                   Grid.Column="1" 
-                   HorizontalAlignment="Left" 
-                   TextWrapping="Wrap" 
-                   Text="Manager" 
-                   VerticalAlignment="Bottom"
-                   FontSize="32"
-                   />
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="NoWrap" Text="Internal Test Version" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+
     </Grid>
 </Page>
