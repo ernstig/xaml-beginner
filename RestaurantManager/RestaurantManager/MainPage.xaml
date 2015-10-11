@@ -5,8 +5,12 @@
     xmlns:local="using:RestaurantManager"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-
+    mc:Ignorable="d"
+    
+    
+    >
+    
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.ColumnDefinitions>
@@ -20,9 +24,9 @@
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="GoToOrders" HorizontalAlignment="Center"  Grid.Row="2"  Content="Go to Orders View" FontSize="48" VerticalAlignment="Center" Click="btnGoToOrders_Click"/>
-        <Button x:Name="SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2"  Content="Submit Order" FontSize="48" VerticalAlignment="Center" Click="btnSubmitOrder_Click"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap" Text="Restaurant Manager" VerticalAlignment="Bottom" FontSize="52" Width="593" Grid.ColumnSpan="2" />
+        <Button x:Name="GoToOrders" HorizontalAlignment="Center"  Grid.Row="2"  Content="Go to Orders View" VerticalAlignment="Center" Click="btnGoToOrders_Click"/>
+        <Button x:Name="SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2"  Content="Submit Order" VerticalAlignment="Center" Click="btnSubmitOrder_Click"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap" Text="Restaurant Manager" VerticalAlignment="Bottom" Width="593" Grid.ColumnSpan="2" />
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="NoWrap" Text="Internal Test Version" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
 
     </Grid>
